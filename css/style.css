@@ -7,7 +7,7 @@ body{
 
 h1{
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial Narrow Bold', sans-serif;
     font-size: x-large;
     margin:20px;
     text-align:center;
@@ -19,10 +19,8 @@ h1{
 p{
     width: auto;
     padding:10px;
- 
     font-family: 'Arial Narrow Bold', sans-serif;
-    margin:20px;
-  
+    margin:5px;
 }
 
 header{
@@ -36,6 +34,73 @@ header{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+  }
+
+  h3{
+    background-color: #3c78d8;
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin:20px;
+    text-align:center;
+    padding:20px;
+    margin-bottom:40px;
+}
+
+/* Colored Circle Numbers  
+
+Source Link : https://codepen.io/chriscoyier/pen/wvKeQOp
+*/
+
+ol {
+    list-style: none;
+    counter-reset: steps;
+  }
+  ol li {
+    counter-increment: steps;
+    padding:10px;
+  }
+  ol li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    background: #ff6f00;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    line-height: 1.2em;
+  }
+  ol ol li::before {
+    background: darkorchid;
+  }
+
+
+
+
+
+  ul {
+    list-style: none;
+    counter-reset: steps;
+  }
+  ul li {
+    counter-increment: steps;
+    padding:10px;
+  }
+  ul li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    background: #ff6f00;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    line-height: 1.2em;
+  }
+  ul ul li::before {
+    background: darkorchid;
   }
 
 

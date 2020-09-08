@@ -15,6 +15,16 @@
 - using If Steatment to Check the User answer with Ownersite info 
 - Showing the alert Window That Tell the User The Answers
 
+# Lab: 03 
+## Extend your 'About Me' and guessing game
+
+**Feature Tasks :**
+
+- Create a Top Ten list (OrderList) `<ol>`
+- Adding Work Experience and Education Sections as list (UnOrderList) `<ul>`
+
+
+
  ### Author: Mohammed Aghead  Albalkhe
 
 ### Links and Resources
