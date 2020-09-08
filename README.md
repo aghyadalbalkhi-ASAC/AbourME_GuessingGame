@@ -22,7 +22,8 @@
 
 - Create a Top Ten list (OrderList) `<ol>`
 - Adding Work Experience and Education Sections as list (UnOrderList) `<ul>`
-
+- Adding Two question 6th and 7th and Score Counter So This is will add some Fun To site
+- applying Some Css Style
 
 
  ### Author: Mohammed Aghead  Albalkhe
