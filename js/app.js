@@ -6,6 +6,14 @@ var VisiterName = prompt('Welcome to Our Website , Plz Tell Us Your Name');
 
 alert('Hello ' + VisiterName + ' Your in The guessing game about The Own Site \n Plz Make Sure To Answer With These Value \n 1-  y or yes \n 2- n or no \n Either in UpperCase or SmallCase');
 
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSven();
+bonus();
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -34,7 +42,7 @@ Lab: 03 - Extend your 'About Me' and guessing game
 
 */
 
-
+function questionOne(){
 var OwnerName = prompt('The First Question is , Is The Name Of OwnerSite Mohammed ?');
 //console.log(checkAnswer(OwnerName));
 
@@ -44,9 +52,9 @@ if (checkAnswer(OwnerName) === 'y' || checkAnswer(OwnerName) === 'yes') {
   alert('Your Answer Is Right');
   score++;
 }
+}
 
-
-
+function questionTwo(){
 var OwnerAge = prompt('The Seconde Question is , Is The Age Of OwnerSite 35 ?');
 //console.log(checkAnswer(OwnerAge));
 
@@ -56,8 +64,9 @@ if (checkAnswer(OwnerAge) === 'y') {
   alert('Your Answer Is Right');
   score++;
 }
+} 
 
-
+function questionThree(){
 var OwnerCountry = prompt('The Third Question is , Is The Country Of OwnerSite Jordan ?');
 //console.log(checkAnswer(OwnerCountry));
 
@@ -67,7 +76,9 @@ if (checkAnswer(OwnerCountry) === 'y') {
   alert('Your Answer Is Right');
   score++;
 }
+}
 
+function questionFour(){
 var OwnerLocation = prompt('The Fourth Question is , Is The Amman City That Owner Site Live Now ?');
 
 //console.log(checkAnswer(OwnerLocation));
@@ -78,7 +89,8 @@ if (checkAnswer(OwnerLocation) === 'y') {
   alert('Your Answer Is Right');
   score++;
 }
-
+}
+function questionFive(){
 var OwnerDegree = prompt('The Fifth Question is , Is the Software Engineering the Degree Of WebSite Owner ?');
 
 //console.log(checkAnswer(OwnerDegree));
@@ -89,8 +101,9 @@ if (checkAnswer(OwnerDegree) === 'y') {
   score++;
 }
 
-alert('Nice Back and Weclome To Our Site again ' + VisiterName + '\n \n Your Score Until Now Is : ' + score);
 
+alert('Nice Back and Weclome To Our Site again ' + VisiterName + '\n \n Your Score Until Now Is : ' + score);
+}
 
 /*
 
@@ -101,7 +114,7 @@ alert('Nice Back and Weclome To Our Site again ' + VisiterName + '\n \n Your Sco
 */
 
 //////// First question to ask the Visitor about Volunteer Works Hours That SiteOwner Has.
-
+function questionSix(){
 // alert window to tell Visitor about game
 alert('Guess How Many Volunteer Works Hours That SiteOwner Has , You Have 4 attempts');
 
@@ -112,7 +125,7 @@ var answer = [];    //Sotre all UserIput to Show it in The End Of the Game
 // Loop With 4 iteration To give the user 4 attempts To guess
 for (var i = 1; i <= 4; i++) {
 
-  Vh = prompt('Not Correct , You spend ' + i + ' Of Your opportunities *-*');    //Get Input From User
+  Vh = prompt('Enter your answer , You spend ' + i + ' Of Your opportunities *-*');    //Get Input From User
   Vh = Number(Vh); // Converting value To Number
   answer.push(Vh);  //adding answer to Array 
 
@@ -134,7 +147,7 @@ for (var i = 1; i <= 4; i++) {
 
 // Showing The Correct Answer and User Input as a Alert Window
 alert('The Correct Answer is : 3000 Volunteer Hours *-^ \n Your Answer \n 1- ' + answer[0] + ' \n 2-' + answer[1] + ' \n 3- ' + answer[2] + ' \n 4- ' + answer[3]);
-
+}
 
 
 
@@ -143,6 +156,7 @@ The 7th question will be about the Favorite Cars 0f The SiteOwner
 
 - asking Visitor To Guess The Car Names and Compare it with AN Array That Store Yhe Cars Names
 */
+function questionSven(){
 alert('I Know You Hate Me Now But Tell That To Out instructor ^-^  , I hope This Will Be The Final question -_- \n Guess The Names Of Favorite Cars That SiteOwn liked');
 
 var Cars = ['bmw', 'audi', 'volkswagen', 'mercedes', 'maserati', 'cadillac', 'porsche', 'lexus'];
@@ -162,7 +176,9 @@ for (var j = 1; j <= 6; j++) {
   }
 
 }
+}
 
+function bonus(){
 var Bonus = confirm('Dear ' + VisiterName + '\n Your Score Is ' + score + '\n What About Some Bonus ? Do You Want ^_* ?');
 
 if (Bonus === true) {
@@ -170,7 +186,7 @@ if (Bonus === true) {
 } else {
   alert('Your are Not A good User -_- , Try To Click Ok ^_*');
 }
-
+}
 
 // Checking UserInput with Array Value
 
